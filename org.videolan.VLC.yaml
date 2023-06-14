@@ -677,6 +677,15 @@ modules:
           url-template: https://github.com/protocolbuffers/protobuf/releases/download/v$version/protobuf-cpp-3.$version.tar.gz
     cleanup:
       - /bin
+  - name: medialibrary
+    buildsystem: meson
+    config-opts:
+      - -Dlibvlc=disabled
+      - -Dlibtool_workaround=true
+    sources:
+      - type: archive
+        url: https://code.videolan.org/videolan/medialibrary/-/archive/0.12.4/medialibrary-0.12.4.tar.bz2
+        sha512: 2b9e9eb5000fd8ff333d29786c3c8ed9f2e2541cd34652b7087ea0fb6b46bfb354472e20dad7c53c159dd447882427e61233ef6224ad5902bedff37756fd950a
   - name: vlc
     config-opts:
       - BUILDCC=/usr/bin/gcc -std=gnu99
