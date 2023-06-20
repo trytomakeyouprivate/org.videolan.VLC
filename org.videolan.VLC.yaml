@@ -705,7 +705,7 @@ modules:
     sources:
       - type: git
         url: https://code.videolan.org/videolan/vlc.git
-        commit: f4a9017dd422d31d956dbf6fc32afac3cc03bcd6
+        commit: 963a01e57fbe3ca5fa36f13e248ae2a225c24e50
       - type: file
         path: org.videolan.VLC.appdata.xml
       - type: patch
